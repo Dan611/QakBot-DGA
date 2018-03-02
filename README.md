@@ -11,10 +11,15 @@ Notable strings in the dump are top level domains ready to be split by a separat
 ```
 As well as an alphabet string being referenced from code:
 ```
+00D26BD0  06 59 FF 75 10   BE 2C 45 D3   00 FF 75 0C 8D 7D E4  .Yÿu.¾,EÓ.ÿu..}ä
+00D26BD5  BE 2C 45 D3  MOV ESI, D3452C
+
 00D34520  4E 55 4C 4C 00 00 00 00 0D 00 00 00 61 62 63 64  NULL........abcd
 00D34530  65 66 67 68 69 6A 6B 6C 6D 6E 6F 70 71 72 73 74  efghijklmnopqrst
 00D34540  75 76 77 78 79 7A 00 00 61 62 63 64 65 66 67 68  uvwxyz..abcdefgh
 ```
+
+
 
 ## General Layout
 QakBot's DGA has the following general layout:
