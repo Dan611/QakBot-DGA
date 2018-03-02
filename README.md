@@ -1,4 +1,4 @@
-# QakBot
+# QakBot's Domain Generation Algorithm
 ## Initial Inspection  
 
 The infected QakBot executable makes several changes to the operating system when run, including copying itself to %APPDATA%/Microsoft/(random name)/, scheduling tasks to run itself again, as well as creating another instance of explorer.exe and injecting malicious code into it. A memory dump of the rogue explorer.exe reveals the likelihood of the DGA being present.
@@ -21,7 +21,7 @@ QakBot's DGA has the following general layout:
 	
  * Get the current date by connecting to the internet
  * Calculate the CRC32 checksum of the date string
- * Feed the cheksum into a Mersenne Twister random number generator
+ * Feed the checksum into a Mersenne Twister random number generator
  * Generate a random amount of random alphabet characters, then append a top level domain
 
 ## Current Date Acquisition
